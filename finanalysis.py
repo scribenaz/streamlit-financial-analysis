@@ -29,7 +29,7 @@ def portfolio_optimization(returns):
 st.title("Financial Analysis Web App")
 
 # User inputs
-tickers = st.text_input("Enter stock tickers (comma separated)", "AAPL, MSFT,
+tickers = st.text_input("Enter stock tickers (comma separated)","AAPL, MSFT,
 GOOG").split(",")
 tickers = [ticker.strip() for ticker in tickers]
 start_date = st.date_input("Start Date", pd.to_datetime("2020-01-01"))
